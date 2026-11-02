@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "institution": "University of Maryland, Baltimore",
+      "degree": "Master of Science",
+      "field": "Information Systems",
+      "end": "May 2024",
+      "details": [
+        "GPA: 3.7"
+      ]
+    },
+    {
+      "institution": "Gitam University, India",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science Engineering",
+      "end": "Apr 2022",
+      "details": [
+        "GPA: 3.6"
+      ]
+    }
+  ]
+}

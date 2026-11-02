@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" font-family="'IBM Plex Mono', SFMono-Regular, Consolas, monospace">
+  <title>PN-03 metricdiff schematic</title>
+  <desc>Baseline and current snapshots feed a diff engine with percent and absolute thresholds, which produces a table or JSON report and exit code 0, 1 or 2.</desc>
+  <defs>
+    <pattern id="minor" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0 L0 0 0 16" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="major" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0 L0 0 0 80" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#ffffff" fill-opacity="0.7"/>
+    </marker>
+    <marker id="arrA" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#36d4be"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="360" fill="#0f1418"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#minor)"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#major)"/>
+
+  <rect x="16" y="16" width="608" height="28" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="28" y="34" font-size="11" letter-spacing="0.6" fill="#ffffff">PN-03 · METRICDIFF · SNAPSHOT DIFF GATE</text>
+
+  <g stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" fill="none">
+    <rect x="32" y="86" width="124" height="48"/>
+    <rect x="32" y="226" width="124" height="48"/>
+    <rect x="424" y="86" width="192" height="48"/>
+    <rect x="424" y="226" width="192" height="48"/>
+  </g>
+  <rect x="224" y="146" width="152" height="80" fill="none" stroke="#36d4be" stroke-width="1"/>
+
+  <g font-size="10" letter-spacing="0.6" fill="#ffffff">
+    <text x="44" y="106">BASELINE</text>
+    <text x="44" y="122" font-size="9" fill-opacity="0.7">CSV | JSON</text>
+    <text x="44" y="246">CURRENT</text>
+    <text x="44" y="262" font-size="9" fill-opacity="0.7">CSV | JSON</text>
+    <text x="240" y="176" fill="#36d4be">DIFF ENGINE</text>
+    <text x="240" y="196" font-size="9" fill-opacity="0.7">PCT + ABS THRESHOLDS</text>
+    <text x="436" y="106">REPORT</text>
+    <text x="436" y="122" font-size="9" fill-opacity="0.7">TABLE | JSON</text>
+    <text x="436" y="246">EXIT CODE</text>
+    <text x="436" y="262" font-size="9" fill-opacity="0.7">0 PASS · 1 BREACH · 2 ERROR</text>
+  </g>
+
+  <g fill="none" stroke-width="1">
+    <path d="M156 110 H192 V166 H224" stroke="#ffffff" stroke-opacity="0.7" marker-end="url(#arr)"/>
+    <path d="M156 250 H192 V206 H224" stroke="#ffffff" stroke-opacity="0.7" marker-end="url(#arr)"/>
+    <path d="M376 170 H400 V110 H424" stroke="#36d4be" marker-end="url(#arrA)"/>
+    <path d="M376 202 H400 V250 H424" stroke="#ffffff" stroke-opacity="0.7" marker-end="url(#arr)"/>
+  </g>
+
+  <rect x="32" y="296" width="288" height="40" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+  <rect x="336" y="296" width="272" height="40" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="48" y="326" font-size="14" fill="#36d4be">33</text>
+  <text x="96" y="326" font-size="9" letter-spacing="0.6" fill="#ffffff" fill-opacity="0.7">TEST CASES</text>
+  <text x="352" y="326" font-size="14" fill="#36d4be">10%</text>
+  <text x="404" y="326" font-size="9" letter-spacing="0.6" fill="#ffffff" fill-opacity="0.7">DEFAULT THRESHOLD</text>
+</svg>

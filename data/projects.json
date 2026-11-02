@@ -1,0 +1,160 @@
+{
+  "projects": [
+    {
+      "name": "Cold Email Generator",
+      "category": "AI tools",
+      "description": "A tool that automates cold email generation for service companies. It extracts job listings from a company's careers page and writes personalized outreach offering tailored engineering services.",
+      "highlights": [
+        "Extracts job listings from a company's careers page",
+        "Generates personalized outreach emails for business development teams"
+      ],
+      "technologies": [
+        "Python",
+        "Groq",
+        "LangChain",
+        "Streamlit"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/Project-Cold_Email_Generator"
+      },
+      "featured": true
+    },
+    {
+      "name": "GDP Dashboard",
+      "category": "Data visualization",
+      "description": "A simple Streamlit app showing the GDP of different countries in the world.",
+      "highlights": [
+        "Runs locally with pip install and a single streamlit run command"
+      ],
+      "technologies": [
+        "Python",
+        "Streamlit"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/gdp-dashboard"
+      }
+    },
+    {
+      "name": "metricdiff",
+      "category": "Data & KPI monitoring",
+      "description": "Diffs two snapshots of your metrics and fails the build when something moves too much. It flags added, removed and breaching metrics against percent and absolute thresholds, from CSV or JSON input.",
+      "highlights": [
+        "Exits non-zero on any material change, so it drops into CI or a cron job",
+        "Covers percent and absolute thresholds, dimensions and zero baselines",
+        "Backed by 33 tests"
+      ],
+      "technologies": [
+        "Python",
+        "pydantic",
+        "CSV",
+        "JSON",
+        "uv"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/metricdiff"
+      }
+    },
+    {
+      "name": "quarry",
+      "category": "Data engineering",
+      "description": "A vectorized SQL query engine over Apache Arrow, written from scratch in Rust. It includes a parser, binder, rule-based optimizer with join reordering, and hash join and aggregate operators, checked against SQLite.",
+      "highlights": [
+        "All 22 TPC-H-like benchmark queries and 93 feature queries return the same rows as SQLite",
+        "Join reordering by estimated cardinality, with scans over memory, CSV and Parquet"
+      ],
+      "technologies": [
+        "Rust",
+        "SQL",
+        "Apache Arrow",
+        "Parquet",
+        "SQLite"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/quarry"
+      },
+      "hero": {
+        "src": "assets/images/projects/quarry-hero.jpg",
+        "alt": "quarry — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "axebudget",
+      "category": "Governance & quality",
+      "description": "An accessibility regression gate that freezes existing WCAG violations into an expiring debt ledger. CI fails only on new violations, over-budget components or debt past its deadline.",
+      "highlights": [
+        "Per-component budgets and severity-weighted expiry on owned, dated debt",
+        "Burndown reporting and a CI report naming each new or expired violation",
+        "Covered by 15 tests against 12 seeded violations"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "WCAG",
+        "Mermaid"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/axebudget",
+        "demo": "https://GG-25.github.io/axebudget/"
+      }
+    },
+    {
+      "name": "adrlint",
+      "category": "Governance & quality",
+      "description": "A decision-record linter that builds a graph of architecture decisions. It flags unresolved contradictions, expired reviews and orphaned supersedes chains while staying quiet about pairs already resolved.",
+      "highlights": [
+        "Detects two live decisions that contradict each other, with scope hierarchy awareness",
+        "Reports overdue reviews and ownerless accepted decisions",
+        "Covered by 21 tests"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Mermaid"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/adrlint"
+      }
+    },
+    {
+      "name": "stridediff",
+      "category": "Risk management",
+      "description": "Architecture-as-code tool that computes a STRIDE threat delta for every change. It fails CI when a new trust-boundary crossing has no recorded mitigation.",
+      "highlights": [
+        "Reports added, removed and escalated threats between two model versions",
+        "Pull-request comment with the verdict and an embedded Mermaid data-flow diagram",
+        "Covered by 24 tests"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "STRIDE",
+        "Mermaid"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/stridediff"
+      }
+    },
+    {
+      "name": "dmarcwatch",
+      "category": "Monitoring & analytics",
+      "description": "Email deliverability monitoring from DMARC aggregate reports. It separates mail that never arrived from mail that arrived and was ignored, and flags unauthorised senders.",
+      "highlights": [
+        "Splits an open-rate drop into deliverability and engagement components that sum to the observed change",
+        "Demo corpus of 145 report documents from 5 providers",
+        "Includes a browser version of the analysis"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "XML",
+        "DMARC",
+        "Mermaid"
+      ],
+      "links": {
+        "source": "https://github.com/GG-25/dmarcwatch",
+        "demo": "https://GG-25.github.io/dmarcwatch/"
+      }
+    }
+  ]
+}

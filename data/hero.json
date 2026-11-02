@@ -1,0 +1,51 @@
+{
+  "name": "Gayathri Gurram",
+  "title": "NPI & Supply Chain Program Manager",
+  "summary": "Program manager with 4+ years leading cross-functional programs across new product introduction, supply chain operations, procurement, inventory and ERP transformation. I own programs end to end, from requirements and stakeholder alignment through launch readiness, KPI governance and post-launch tracking.",
+  "location": "United States",
+  "photo": {
+    "src": "assets/images/gayathri-gurram.jpg",
+    "alt": "Portrait of Gayathri Gurram"
+  },
+  "readouts": [
+    {
+      "value": "$2M",
+      "label": "global packaging programs owned"
+    },
+    {
+      "value": "15%",
+      "label": "excess inventory reduced at Athena Cosmetics"
+    },
+    {
+      "value": "20%",
+      "label": "order accuracy improved at Doublene USA"
+    },
+    {
+      "value": "3",
+      "label": "fulfillment centers launched across 3 regions"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "View projects",
+      "href": "#projects",
+      "kind": "primary"
+    },
+    {
+      "label": "Résumé",
+      "href": "assets/files/gayathri-gurram-resume.pdf",
+      "kind": "resume"
+    },
+    {
+      "label": "Get in touch",
+      "href": "#contact",
+      "kind": "secondary"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/GG-25",
+    "linkedin": "https://linkedin.com/in/gayathri-g-b86207348/",
+    "email": "ggurram.work@gmail.com",
+    "phone": "561-785-6440"
+  }
+}

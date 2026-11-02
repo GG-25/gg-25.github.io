@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-07 stridediff threat delta pipeline</title>
+<desc>Architecture model through STRIDE rules, diff, gate and pull-request comment, with mitigations feeding the gate and three readouts.</desc>
+<defs>
+<style>.t{font-family:"IBM Plex Mono, SFMono-Regular, Consolas, monospace";letter-spacing:0.06em;fill:#fff}.u{font-size:10px}.s{font-size:9px;fill-opacity:.7}.n{font-size:24px;fill:#36d4be}</style>
+<pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+<pattern id="G" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#fff" stroke-opacity=".09"/></pattern>
+<marker id="h" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L6 3L0 6z" fill="#fff" fill-opacity=".6"/></marker>
+<marker id="k" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L6 3L0 6z" fill="#36d4be"/></marker>
+</defs>
+<rect width="640" height="360" fill="#0f1418"/>
+<rect width="640" height="360" fill="url(#g)"/>
+<rect width="640" height="360" fill="url(#G)"/>
+<rect x="0" y="0" width="640" height="30" fill="#fff" fill-opacity=".04"/>
+<line x1="0" y1="30" x2="640" y2="30" stroke="#fff" stroke-opacity=".5"/>
+<text class="t u" x="16" y="19">PN-07 · STRIDEDIFF · STRIDE THREAT DELTA PER CHANGE</text>
+<text class="t s" x="624" y="19" text-anchor="end">FIG 01</text>
+
+<rect x="16" y="96" width="100" height="52" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t u" x="26" y="118">MODEL</text>
+<text class="t s" x="26" y="134">ZONES · FLOWS</text>
+<rect x="143" y="96" width="100" height="52" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t u" x="153" y="118">STRIDE</text>
+<text class="t s" x="153" y="134">THREATSFORFLOW</text>
+<rect x="270" y="96" width="100" height="52" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t u" x="280" y="118">DIFF</text>
+<text class="t s" x="280" y="134">BASE VS HEAD</text>
+<rect x="397" y="96" width="100" height="52" fill="#0f1418" stroke="#36d4be"/>
+<text class="t u" x="407" y="118" style="fill:#36d4be">GATE</text>
+<text class="t s" x="407" y="134">NEW RISK CHECK</text>
+<rect x="524" y="96" width="100" height="52" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t u" x="534" y="118">RENDER</text>
+<text class="t s" x="534" y="134">PR COMMENT</text>
+
+<line x1="116" y1="122" x2="142" y2="122" stroke="#fff" stroke-opacity=".6" marker-end="url(#h)"/>
+<line x1="243" y1="122" x2="269" y2="122" stroke="#fff" stroke-opacity=".6" marker-end="url(#h)"/>
+<line x1="370" y1="122" x2="396" y2="122" stroke="#36d4be" marker-end="url(#k)"/>
+<line x1="497" y1="122" x2="523" y2="122" stroke="#36d4be" marker-end="url(#k)"/>
+
+<rect x="397" y="200" width="100" height="52" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t u" x="407" y="218">MITIGATIONS</text>
+<text class="t s" x="407" y="234">CONTROL/OWNER</text>
+<line x1="447" y1="198" x2="447" y2="150" stroke="#36d4be" marker-end="url(#k)"/>
+
+<rect x="524" y="200" width="100" height="52" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t u" x="534" y="218">MERMAID</text>
+<text class="t s" x="534" y="234">BOUNDARY MARKS</text>
+<line x1="574" y1="148" x2="574" y2="198" stroke="#fff" stroke-opacity=".6" marker-end="url(#h)"/>
+
+<line x1="66" y1="148" x2="66" y2="182" stroke="#fff" stroke-opacity=".6" marker-end="url(#h)"/>
+<rect x="16" y="184" width="220" height="64" fill="none" stroke="#fff" stroke-opacity=".5" stroke-dasharray="4 3"/>
+<text class="t s" x="24" y="198">TRUST BOUNDARY · INTERNET</text>
+<rect x="28" y="206" width="80" height="30" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t s" x="34" y="225" style="fill-opacity:1">BROWSER</text>
+<rect x="140" y="206" width="80" height="30" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t s" x="150" y="225" style="fill-opacity:1">EDGE</text>
+<line x1="108" y1="221" x2="138" y2="221" stroke="#36d4be" marker-end="url(#k)"/>
+
+<rect x="16" y="274" width="192" height="56" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t n" x="30" y="316">24</text>
+<text class="t u" x="76" y="298">TESTS</text>
+<text class="t s" x="76" y="312">npm test</text>
+
+<rect x="224" y="274" width="192" height="56" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t n" x="238" y="316">8</text>
+<text class="t u" x="284" y="298">MUTATIONS</text>
+<text class="t s" x="284" y="312">in the demo table</text>
+
+<rect x="432" y="274" width="192" height="56" fill="#0f1418" stroke="#fff" stroke-opacity=".6"/>
+<text class="t n" x="446" y="316">3</text>
+<text class="t u" x="492" y="298">NEW THREATS</text>
+<text class="t s" x="492" y="312">on the webhook PR</text>
+</svg>

@@ -1,0 +1,69 @@
+{
+  "groups": [
+    {
+      "name": "Supply Chain & Operations",
+      "items": [
+        "Supply Chain Management",
+        "S&OP",
+        "Demand Forecasting",
+        "Inventory Planning",
+        "Fulfillment Operations",
+        "Procurement Analytics",
+        "Supplier Performance Management",
+        "Vendor Management",
+        "Warehouse Operations",
+        "Logistics Coordination",
+        "3PL Integration"
+      ]
+    },
+    {
+      "name": "Program & Project Management",
+      "items": [
+        "Program Lifecycle Management",
+        "NPI Program Management",
+        "Project Planning & Execution",
+        "Scope Management",
+        "Change Management",
+        "Risk Mitigation",
+        "Agile Methodology",
+        "UAT Management"
+      ]
+    },
+    {
+      "name": "Systems & Enterprise Platforms",
+      "items": [
+        "SAP S/4HANA",
+        "Oracle Fusion",
+        "Microsoft Dynamics Business Central",
+        "Navision",
+        "ERP Enhancement Programs",
+        "Systems Integration",
+        "Inventory Management Systems (IMS)"
+      ]
+    },
+    {
+      "name": "Analytics & Reporting",
+      "items": [
+        "SQL",
+        "Power BI",
+        "Tableau",
+        "Advanced Excel",
+        "Power Query",
+        "Data Modeling",
+        "KPI Development",
+        "Dashboard Development",
+        "Reporting Automation"
+      ]
+    },
+    {
+      "name": "Collaboration Tools",
+      "items": [
+        "Jira",
+        "Asana",
+        "Notion",
+        "PRD Documentation",
+        "Functional Specifications"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <title>PN-06 adrlint architecture schematic</title>
+  <desc>Decision records and scope tree feed the lint runner, which runs three rule groups into findings and a per-subject timeline, then a demo report.</desc>
+  <defs>
+    <style>
+      .t{font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;letter-spacing:0.06em;fill:#ffffff;font-size:10px}
+      .s{font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;letter-spacing:0.06em;fill:#ffffff;fill-opacity:0.7;font-size:9px}
+      .a{font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;letter-spacing:0.06em;fill:#36d4be;font-size:11px}
+    </style>
+    <pattern id="g16" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="g80" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L8 4L0 8z" fill="#ffffff" fill-opacity="0.7"/>
+    </marker>
+    <marker id="ak" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L8 4L0 8z" fill="#36d4be"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="360" fill="#0f1418"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#g16)"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#g80)"/>
+
+  <!-- title strip -->
+  <rect x="16" y="16" width="608" height="28" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="28" y="34" class="t">PN-06 · ADRLINT · DECISION-RECORD CONTRADICTION LINTER</text>
+
+  <!-- readouts -->
+  <rect x="16" y="80" width="120" height="44" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="24" y="102" class="a">21 TESTS</text>
+  <text x="24" y="116" class="s">npm test</text>
+
+  <rect x="330" y="80" width="104" height="44" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="338" y="102" class="a">3 RULE GROUPS</text>
+  <text x="338" y="116" class="s">error / warning</text>
+
+  <rect x="16" y="270" width="120" height="48" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="24" y="292" class="a">10 RECORDS</text>
+  <text x="24" y="306" class="s">sample log</text>
+
+  <!-- fixtures -->
+  <rect x="16" y="150" width="120" height="56" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="24" y="172" class="t">FIXTURES.TS</text>
+  <text x="24" y="188" class="s">records</text>
+
+  <!-- model (key path) -->
+  <rect x="170" y="150" width="120" height="56" fill="none" stroke="#36d4be" stroke-width="1"/>
+  <text x="178" y="172" class="t">MODEL.TS</text>
+  <text x="178" y="188" class="s">SCOPE_TREE</text>
+
+  <!-- lint runner -->
+  <rect x="330" y="150" width="104" height="56" fill="none" stroke="#36d4be" stroke-width="1"/>
+  <text x="338" y="172" class="t">LINT.TS</text>
+  <text x="338" y="188" class="s">rule runner</text>
+
+  <!-- rule groups -->
+  <rect x="480" y="88" width="144" height="40" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="488" y="104" class="t">CONTRADICTIONS</text>
+  <text x="488" y="118" class="s">overlap, no edge</text>
+
+  <rect x="480" y="150" width="144" height="40" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="488" y="166" class="t">SUPERSEDES</text>
+  <text x="488" y="180" class="s">orphans, cycles</text>
+
+  <rect x="480" y="212" width="144" height="40" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="488" y="228" class="t">HYGIENE</text>
+  <text x="488" y="242" class="s">review, owner</text>
+
+  <!-- findings -->
+  <rect x="480" y="270" width="144" height="48" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="488" y="292" class="t">FINDING[]</text>
+  <text x="488" y="306" class="s">errors · warnings</text>
+
+  <!-- timeline -->
+  <rect x="170" y="270" width="120" height="48" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="178" y="292" class="t">TIMELINE</text>
+  <text x="178" y="306" class="s">per subject</text>
+
+  <!-- report -->
+  <rect x="330" y="270" width="110" height="48" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="338" y="292" class="t">DEMO.TS</text>
+  <text x="338" y="306" class="s">report</text>
+
+  <!-- connections -->
+  <path d="M136 178 H170" fill="none" stroke="#36d4be" stroke-width="1" marker-end="url(#ak)"/>
+  <path d="M290 178 H330" fill="none" stroke="#36d4be" stroke-width="1" marker-end="url(#ak)"/>
+  <path d="M434 178 H456 M456 108 V232" fill="none" stroke="#36d4be" stroke-width="1"/>
+  <path d="M456 108 H478 M456 170 H478 M456 232 H478" fill="none" stroke="#36d4be" stroke-width="1" marker-end="url(#ak)"/>
+  <path d="M230 206 V270" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" marker-end="url(#ah)"/>
+  <path d="M552 252 V270" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" marker-end="url(#ah)"/>
+  <path d="M480 294 H440" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" marker-end="url(#ah)"/>
+  <path d="M290 294 H330" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" marker-end="url(#ah)"/>
+</svg>

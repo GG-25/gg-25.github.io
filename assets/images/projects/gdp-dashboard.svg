@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <title>PN-02 GDP Dashboard schematic</title>
+  <desc>Data flow: country GDP data feeds streamlit_app.py, which renders charts in the browser. requirements.txt and the streamlit run command support the app.</desc>
+  <defs>
+    <pattern id="minor" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="major" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ffffff" fill-opacity="0.7"/>
+    </marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#36d4be"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="360" fill="#0f1418"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#minor)"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#major)"/>
+
+  <g font-family="IBM Plex Mono, SFMono-Regular, Consolas, monospace" letter-spacing="0.06em" fill="#ffffff" text-anchor="middle">
+    <!-- title strip -->
+    <rect x="16" y="16" width="608" height="24" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="28" y="32" font-size="10" text-anchor="start">PN-02 · GDP DASHBOARD · STREAMLIT APP</text>
+
+    <!-- requirements box -->
+    <rect x="255" y="84" width="130" height="40" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="320" y="108" font-size="10">REQUIREMENTS.TXT</text>
+
+    <!-- data source -->
+    <rect x="32" y="150" width="130" height="60" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="97" y="176" font-size="10">COUNTRY GDP</text>
+    <text x="97" y="192" font-size="9" fill-opacity="0.7">DATA SOURCE</text>
+
+    <!-- app (key path) -->
+    <rect x="255" y="150" width="130" height="60" fill="none" stroke="#36d4be" stroke-width="1"/>
+    <text x="320" y="176" font-size="10" fill="#36d4be">STREAMLIT_APP.PY</text>
+    <text x="320" y="192" font-size="9" fill-opacity="0.7">APP ENTRYPOINT</text>
+
+    <!-- browser -->
+    <rect x="478" y="150" width="130" height="60" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="543" y="176" font-size="10">BROWSER</text>
+    <text x="543" y="192" font-size="9" fill-opacity="0.7">CHARTS</text>
+
+    <!-- run command -->
+    <rect x="255" y="262" width="130" height="40" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+    <text x="320" y="286" font-size="10">STREAMLIT RUN</text>
+
+    <!-- arrows -->
+    <line x1="162" y1="180" x2="253" y2="180" stroke="#36d4be" stroke-width="1" marker-end="url(#arrA)"/>
+    <line x1="385" y1="180" x2="476" y2="180" stroke="#36d4be" stroke-width="1" marker-end="url(#arrA)"/>
+    <line x1="320" y1="124" x2="320" y2="148" stroke="#ffffff" stroke-opacity="0.7" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="320" y1="260" x2="320" y2="212" stroke="#ffffff" stroke-opacity="0.7" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- arrow labels -->
+    <text x="208" y="172" font-size="9" fill-opacity="0.7">CSV</text>
+    <text x="431" y="172" font-size="9" fill-opacity="0.7">HTTP</text>
+
+    <!-- caption -->
+    <text x="32" y="336" font-size="9" fill-opacity="0.7" text-anchor="start">FIG 1 · LOCAL DATA FLOW</text>
+  </g>
+</svg>

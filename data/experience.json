@@ -1,0 +1,68 @@
+{
+  "roles": [
+    {
+      "company": "Athena Cosmetics",
+      "logo": "assets/images/logos/athena-cosmetics.svg",
+      "title": "Program Manager",
+      "start": "Jan 2025",
+      "end": "Present",
+      "location": "Las Vegas, NV",
+      "description": "Own global packaging programs and multi-region product launches, coordinating Finance, Operations, Supply Chain and Ecommerce stakeholders on schedules, KPIs and 3PL and ERP initiatives.",
+      "highlights": [
+        "Own delivery of $2M global packaging programs, aligning scope, requirements, stakeholders, governance, and performance across functions",
+        "Directed multi-region product launches across three fulfillment centers in North America, Italy, and Netherlands, ensuring operational readiness",
+        "Approved scope modifications across 3 workstreams supporting 3PL integration initiatives and warehouse management system connectivity",
+        "Established KPIs and Power BI dashboards, reducing packaging obsolescence 7% while improving inventory visibility, fulfillment, and forecasting",
+        "Led SQL and Power BI forecasting, inventory optimization, and ERP enhancements, reducing excess inventory 15% and supporting 10K+ records"
+      ],
+      "technologies": [
+        "Power BI",
+        "SQL",
+        "ERP",
+        "3PL",
+        "Warehouse Management System"
+      ]
+    },
+    {
+      "company": "Doublene USA",
+      "logo": "assets/images/logos/doublene-usa.svg",
+      "title": "Associate Program Manager",
+      "start": "Feb 2024",
+      "end": "Dec 2024",
+      "location": "Austin, TX",
+      "description": "Supported $3.5M feedstock programs and launch readiness through reporting requirements, supplier management and S&OP analysis.",
+      "highlights": [
+        "Defined reporting requirements, business processes, and functional specifications supporting $3.5M feedstock programs and launch readiness",
+        "Resolved supplier lead-time disruptions by identifying alternate sourcing strategies, onboarding replacement vendors, and preserving timelines",
+        "Automated weekly Excel-based supply chain reporting workflows, reducing processing time from five hours to less than ten minutes",
+        "Improved order accuracy 20% by streamlining automated reporting processes and strengthening supply chain planning and execution visibility",
+        "Reduced revenue-impacting delays 18% through analysis of production, inventory, and demand-planning requirements supporting decisions"
+      ],
+      "technologies": [
+        "Excel",
+        "Supply chain reporting",
+        "S&OP"
+      ]
+    },
+    {
+      "company": "TheSmartBridge",
+      "logo": "assets/images/logos/thesmartbridge.svg",
+      "title": "Supply Chain Product Analyst",
+      "start": "Apr 2020",
+      "end": "Jul 2022",
+      "location": "India",
+      "description": "Built KPI dashboards and supported S&OP with demand, capacity and supplier-performance analysis.",
+      "highlights": [
+        "Developed SQL and Power BI dashboards for KPI monitoring, improving process efficiency by 12% through performance insights",
+        "Supported S&OP through demand analysis, capacity-planning inputs, forecasting reviews, and operational reporting for decision-making",
+        "Delivered procurement and supplier-performance analyses that identified improvement opportunities and contributed to a 10% cost reduction",
+        "Improved supplier lead times by 15% through performance analysis, procurement insights, and targeted supply chain improvement initiatives",
+        "Consolidated operational reporting to improve visibility into sales, operations, demand, and capacity-planning performance"
+      ],
+      "technologies": [
+        "SQL",
+        "Power BI"
+      ]
+    }
+  ]
+}

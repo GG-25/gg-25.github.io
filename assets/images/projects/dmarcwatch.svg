@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <title>PN-08 dmarcwatch schematic</title>
+  <desc>Pipeline: RUA XML reports pass through xml.ts, rua.ts and analyse.ts, then to a console report (demo.ts) and a browser view (site/core.mjs). fixtures.ts feeds the reports. Readouts: 145 documents, 5 dialects, 29-day corpus.</desc>
+  <style>
+    .t{font-family:"IBM Plex Mono, SFMono-Regular, Consolas, monospace";font-size:10px;letter-spacing:.06em;text-transform:uppercase;fill:#ffffff}
+    .s{font-family:"IBM Plex Mono, SFMono-Regular, Consolas, monospace";font-size:9px;letter-spacing:.06em;text-transform:uppercase;fill:#ffffff;fill-opacity:.7}
+    .n{font-family:"IBM Plex Mono, SFMono-Regular, Consolas, monospace";font-size:18px;fill:#36d4be}
+  </style>
+  <defs>
+    <pattern id="minor" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="major" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#36d4be"/>
+    </marker>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#ffffff" fill-opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="360" fill="#0f1418"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#minor)"/>
+  <rect x="0" y="0" width="640" height="360" fill="url(#major)"/>
+
+  <!-- title strip -->
+  <rect x="0" y="0" width="640" height="28" fill="#ffffff" fill-opacity="0.04"/>
+  <line x1="0" y1="28" x2="640" y2="28" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="16" y="18" class="t">PN-08 · DMARCWATCH · RUA REPORTS TO DELIVERABILITY VERDICT</text>
+
+  <!-- main pipeline -->
+  <g stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" fill="#0f1418">
+    <rect x="28" y="90" width="128" height="60"/>
+    <rect x="180" y="90" width="128" height="60"/>
+    <rect x="332" y="90" width="128" height="60"/>
+    <rect x="484" y="90" width="128" height="60"/>
+  </g>
+  <text x="40" y="114" class="t">RUA XML</text>
+  <text x="40" y="132" class="s">5 dialects</text>
+  <text x="192" y="114" class="t">XML.TS</text>
+  <text x="192" y="132" class="s">XML reader</text>
+  <text x="344" y="114" class="t">RUA.TS</text>
+  <text x="344" y="132" class="s">tolerant parser</text>
+  <text x="496" y="114" class="t">ANALYSE.TS</text>
+  <text x="496" y="132" class="s">root cause, split</text>
+
+  <!-- key path arrows -->
+  <g stroke="#36d4be" stroke-width="1" fill="none">
+    <path d="M156 120H180" marker-end="url(#ar)"/>
+    <path d="M308 120H332" marker-end="url(#ar)"/>
+    <path d="M460 120H484" marker-end="url(#ar)"/>
+  </g>
+
+  <!-- fixtures feed -->
+  <rect x="28" y="220" width="128" height="50" fill="#0f1418" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="40" y="244" class="t">FIXTURES.TS</text>
+  <text x="40" y="260" class="s">seeded generator</text>
+  <path d="M92 220V150" stroke="#ffffff" stroke-opacity="0.7" stroke-width="1" fill="none" marker-end="url(#arw)"/>
+
+  <!-- outputs -->
+  <rect x="332" y="220" width="128" height="50" fill="#0f1418" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="344" y="244" class="t">DEMO.TS</text>
+  <text x="344" y="260" class="s">console report</text>
+  <rect x="484" y="220" width="128" height="50" fill="#0f1418" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="496" y="244" class="t">SITE/CORE.MJS</text>
+  <text x="496" y="260" class="s">browser view</text>
+
+  <!-- bus from analyse.ts -->
+  <g stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" fill="none">
+    <path d="M548 150V190"/>
+    <path d="M396 190H548"/>
+    <path d="M396 190V220" marker-end="url(#arw)"/>
+    <path d="M548 190V220" marker-end="url(#arw)"/>
+  </g>
+
+  <!-- readouts -->
+  <g stroke="#36d4be" stroke-opacity="0.8" stroke-width="1" fill="#0f1418">
+    <rect x="28" y="288" width="180" height="48"/>
+    <rect x="230" y="288" width="180" height="48"/>
+    <rect x="432" y="288" width="180" height="48"/>
+  </g>
+  <text x="40" y="314" class="n">145</text>
+  <text x="104" y="314" class="s">RUA documents</text>
+  <text x="242" y="314" class="n">5</text>
+  <text x="262" y="314" class="s">provider dialects</text>
+  <text x="444" y="314" class="n">29</text>
+  <text x="478" y="314" class="s">day corpus</text>
+</svg>
